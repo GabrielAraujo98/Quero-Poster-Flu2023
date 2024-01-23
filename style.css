@@ -17,7 +17,7 @@
     "imagem imagem formulario"
     "footer footer footer"
     ;
-    grid-gap: 0.2rem;
+    grid-gap: 0.5rem;
     color: #721728;
     text-align: center;
     max-width: 850px;
@@ -162,4 +162,46 @@ footer{
         margin: auto;
     }
 
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        margin-left: 0px;
+        max-width: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 0.3fr;
+        grid-template-areas: 
+        "titulo"
+        "imagem"
+        "formulario"
+        "footer"
+        ;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #titulo{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "principal"
+        "secundario"
+        ;
+        text-align: center;
+    }
+
+    #escudo{
+        align-self: first baseline;
+        grid-area: escudo;
+    }
+
+    #formulario{
+        margin: auto;
+        max-width: 300px;
+    }
+
+    #imagem{
+        max-width: 340px;
+        margin: auto;
+    }
 }
