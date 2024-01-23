@@ -196,12 +196,12 @@ footer{
     }
 
     #formulario{
-        margin: auto;
         max-width: 300px;
+        object-position: 50% 50%;
     }
 
     #imagem{
         max-width: 340px;
-        margin: auto;
+        object-position: 50% 50%;
     }
 }
