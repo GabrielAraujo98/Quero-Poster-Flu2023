@@ -58,7 +58,7 @@ footer{
 
 #titulo h3{
     grid-area: secundario;
-    text-align: right;
+    text-align: center;
     margin: 0;
 }
 #imagem{
