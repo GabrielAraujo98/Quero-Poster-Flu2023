@@ -167,7 +167,7 @@ footer{
 @media only screen and (max-width: 500px){
     .container{
         margin-left: 0px;
-        max-width: 400px;
+        max-width: 300px;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 2fr 2fr 0.3fr;
         grid-template-areas: 
@@ -197,11 +197,11 @@ footer{
 
     #formulario{
         margin: auto;
-        max-width: 250px;
+        max-width: 150px;
     }
 
     #imagem{
-        max-width: 290px;
+        max-width: 190px;
         margin: auto;
     }
 }
