@@ -148,19 +148,17 @@ footer{
 
     #escudo{
         align-self: first baseline;
-        height: 30px;
-        width: auto;
         grid-area: escudo;
     }
 
     #formulario{
-        margin: 0;
-        width: 360px;
+        margin: auto;
+        max-width: 710px;
     }
 
     #imagem{
-        width: 400px;
-        margin: 0;
+        max-width: 750px;
+        margin: auto;
     }
 
 }
