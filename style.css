@@ -41,7 +41,7 @@ footer{
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "principal principal principal principal"
-    "secundario secundario secundario escudo"
+    "secundario secundario secundario secundario"
     ;
     grid-gap: 0.5rem;
 }
@@ -123,7 +123,8 @@ footer{
 @media only screen and (max-width: 850px){
 
     .container{
-        max-width: 600px;
+        margin-left: 0px;
+        max-width: 800px;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 2fr 2fr 0.3fr;
         grid-template-areas: 
@@ -134,23 +135,36 @@ footer{
         ;
         margin: auto;
     }
+
+    #titulo{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "principal"
+        "secundario"
+        ;
+        text-align: center;
+    }
+
+    #titulo h3{
+        text-align: center;
+    }
+
     #escudo{
-        align-self: center;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
+        align-self: first baseline;
         height: 30px;
         width: auto;
         grid-area: escudo;
     }
 
     #formulario{
-        margin: 0rem 1rem 0rem 1rem;
+        margin: 0;
         width: 360px;
     }
 
     #imagem{
         width: 400px;
-        margin: 0rem 1rem 0rem 1rem;
+        margin: 0;
     }
 
 }
