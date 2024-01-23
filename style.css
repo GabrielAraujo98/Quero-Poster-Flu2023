@@ -134,6 +134,7 @@ footer{
         "footer"
         ;
         margin: auto;
+        justify-content: center;
     }
 
     #titulo{
