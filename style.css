@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+:root{
+    background-color: rgb(240, 240, 240);    
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 2rem;
+}
+.container{
+    margin: auto;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.3fr;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "imagem imagem formulario"
+    "footer footer footer"
+    ;
+    grid-gap: 0.2rem;
+    color: #721728;
+    text-align: center;
+    max-width: 850px;
+}
+
+footer{
+    grid-area: footer;
+    margin: auto;
+    padding-bottom: 20px;
+    color: #721728;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+#titulo{
+    display: grid;
+    grid-area: titulo;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "principal principal principal principal"
+    "secundario secundario secundario escudo"
+    ;
+    grid-gap: 0.5rem;
+}
+
+#escudo{
+    height: 30px;
+    width: auto;
+    grid-area: escudo;
+}
+
+#titulo h1{
+    grid-area: principal;
+}
+
+#titulo h3{
+    grid-area: secundario;
+    text-align: right;
+    margin: 0;
+}
+#imagem{
+    grid-area: imagem;
+    width: auto;
+    max-height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 28px -25px #721728;
+}
+
+#formulario{
+    grid-area: formulario;
+    background-color: white;
+    padding: 20px;
+    max-height: 1040px;
+    box-shadow: 10px 10px 28px -25px #721728;
+    border-radius: 20px;
+}
+
+#formulario label{
+    background-color: white;
+}
+
+#nome{
+    background-color: rgb(220, 220, 220);
+    border: none;
+    height: 25px;
+}
+
+#email{
+    background-color: rgb(220, 220, 220);
+    border: none;
+    height: 25px;
+}
+
+#radiobtna3{
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+
+#radiobtna4{
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+
+#formulario p{
+    background-color: white;
+}
+#enviar{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: white;
+    font-size: larger;
+    width: 150px;
+    height: 75px;
+    color: #fff;
+    background-color: #721728;
+    border: none;
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 0.3fr;
+        grid-template-areas: 
+        "titulo"
+        "imagem"
+        "formulario"
+        "footer"
+        ;
+        margin: auto;
+    }
+    #escudo{
+        align-self: center;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        height: 30px;
+        width: auto;
+        grid-area: escudo;
+    }
+
+    #formulario{
+        margin: 0rem 1rem 0rem 1rem;
+        width: 360px;
+    }
+
+    #imagem{
+        width: 400px;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+
+}
